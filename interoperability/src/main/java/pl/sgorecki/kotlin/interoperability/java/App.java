@@ -1,5 +1,6 @@
 package pl.sgorecki.kotlin.interoperability.java;
 
+import pl.sgorecki.kotlin.interoperability.kotlin.IamKotlin;
 import pl.sgorecki.kotlin.interoperability.kotlin.KotlinHero;
 
 public class App {
@@ -23,5 +24,13 @@ public class App {
         System.out.println(java10.shout());
         System.out.println(knigh_of_the_old_npe.shout());
         System.out.println(pudliszki.shout());
+
+        IamJava java = new IamJava();
+        IamKotlin kotlin = new IamKotlin();
+        java.setKotlin(kotlin);
+        kotlin.setJava(java);
+
+        java.tell();
+        kotlin.tell();
     }
 }
