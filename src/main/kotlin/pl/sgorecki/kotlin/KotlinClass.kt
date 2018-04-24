@@ -7,3 +7,7 @@ class KotlinClass {
     }
 
 }
+fun main(args: Array<String>) {
+    val javaClass = JavaClass()
+    javaClass.printHello()
+}
