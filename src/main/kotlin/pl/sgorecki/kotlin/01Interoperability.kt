@@ -9,7 +9,10 @@ fun main(args: Array<String>) {
     val writer = PrintWriter(file)
     val beanToCsv = StatefulBeanToCsvBuilder<Company>(writer).build()
 
-    // ...
+    val gft = Company()
+    gft.name = "GFT"
+    gft.income = 999_999_999
 
+    beanToCsv.write(gft)
     writer.close()
 }
