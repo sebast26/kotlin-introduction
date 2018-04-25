@@ -7,6 +7,7 @@ class JavaClass {
     }
 
     public static void main(String[] args) {
-
+        final JavaClass javaClass = new JavaClass();
+        javaClass.sayHello();
     }
 }
