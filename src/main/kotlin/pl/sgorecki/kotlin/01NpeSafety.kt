@@ -1,6 +1,6 @@
 package pl.sgorecki.kotlin
 
-val firstName: String = "Seba"
+val firstName: String = "always not null"
 val secondName: String? = null
 
 class PersonalInfo(val email: String?)
